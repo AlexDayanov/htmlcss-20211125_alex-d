@@ -19,9 +19,15 @@
 }
 
 .accordion__summary {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion__summary::-webkit-details-marker {
     display: none;
+}
+
+.accordion__details[open]>.accordion__summary>svg[class="icon"] {
+    transform: rotate(180deg);
 }
